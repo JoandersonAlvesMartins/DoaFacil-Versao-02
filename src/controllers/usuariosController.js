@@ -1,23 +1,19 @@
 
+const Usuario = require('../models').Usuario
+
 exports.listAll = (req, res) => {
-    // criando um mockap
-    let usuarios = [ // criando um array de usuarios
-        {
-            nome: 'teste 01',
-            email: 'teste01@email.com'
-        },
-        {
-            nome: 'teste 02',
-            email: 'teste02@email.com'
-        }
-    ]
-    res.send(usuarios)
+    Usuario.findAll().then(usuarios => {
+        res.send(usuarios)
+    }).catch(error => {
+
+    })
 }
 
-exports.createOne = (req, res) => {
-    let response = {
-        message: 'Usuário criado com sucesso!',
-        data: req.body
-    }
-    res.send(response)
+exports.createOne = (req, res) => { // tratando as informações vinds do body
+    const {nome, sobrenome, cpf, cep, logradouro, complemento, numero, bairro, estado, email, senha} = req.body
+    Usuario.create({nome, sobrenome, cpf, cep, logradouro, complemento, numero, bairro, estado, email, senha}).then(usuario => {
+        res.send(usuario)
+    }).catch(error => {
+        res.send(error)
+    })
 }
