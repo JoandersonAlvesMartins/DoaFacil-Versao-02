@@ -5,7 +5,7 @@ exports.listAll = (req, res) => {
     Usuario.findAll().then(usuarios => {
         res.send(usuarios)
     }).catch(error => {
-
+        
     })
 }
 
