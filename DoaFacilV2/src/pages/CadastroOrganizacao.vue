@@ -69,7 +69,7 @@
         </q-card-section>
         <q-card-actions vertical class="q-pt-none q-pb-md q-px-xl">
           <!-- btn submit -->
-          <q-btn label="Cadastrar" type="submit" color="primary"/>
+          <q-btn label="Cadastrar" type="submit" color="primary" to="LogOrg"/>
           <!-- btn submit fim -->
         </q-card-actions>
       </q-card>

@@ -10,7 +10,7 @@
       <div class="crianca-avatar absolute-right q-px-xl q-mr-xl">
         <q-img alt="Criança Sorindo!" src="../Img/avatar.svg"/>
         <div class="buttons q-my-xl">
-          <q-btn class="q-btn q-mr-md" size="20px" style="background:#0ccf50" to="LogDoar">Quero Doar</q-btn>
+          <q-btn class="q-btn q-mr-md" size="20px" style="background:#0ccf50" to=Campanhas>Quero Doar</q-btn>
           <q-btn class="q-btn q-mr-md" size="20px" style="background:#2f40f7" to=LogOrg>Organização</q-btn>
         </div>
       </div>

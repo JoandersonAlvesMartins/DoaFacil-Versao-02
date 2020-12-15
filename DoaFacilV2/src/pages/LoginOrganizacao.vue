@@ -58,7 +58,7 @@
         </q-card-actions>
         <q-card-actions vertical class="q-pt-none q-pb-md q-px-xl">
           <!-- btn submit -->
-          <q-btn label="Logar" type="submit" color="primary"/>
+          <q-btn label="Logar" type="submit" color="primary" to="/Organizacao"/>
           <!-- btn submit fim -->
         </q-card-actions>
       </q-card>

@@ -35,7 +35,7 @@
         </q-card-section>
         <q-card-actions vertical class="q-mx-md q-pt-none q-pb-md q-px-xl">
           <!-- btn submit -->
-          <q-btn label="Enviar" type="submit" color="primary"/>
+          <q-btn label="Enviar" type="submit" color="primary" to="/"/>
           <!-- btn submit fim -->
         </q-card-actions>
       </q-card>
